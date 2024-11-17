@@ -361,8 +361,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0f85e28e1a2da84eb6f7182601aa167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumpForce: 300
-  _moveSpeed: 2
+  _jumpForce: 20
+  _moveSpeed: 9
+  _maxJumps: 2
 --- !u!61 &692877042
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -516,9 +517,9 @@ GameObject:
   - component: {fileID: 727259349}
   - component: {fileID: 727259348}
   - component: {fileID: 727259347}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
