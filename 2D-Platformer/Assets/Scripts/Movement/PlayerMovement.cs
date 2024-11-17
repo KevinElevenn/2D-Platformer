@@ -16,6 +16,9 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded;
     private int _jumpCount;
     [SerializeField] private int _maxJumps = 2;
+
+    private GameObject _landedVFX; // Reference to the VFX prefab
+    private Transform _vfxSpawn;   // Reference to the Transform where the VFX will spawn
     
 
     // Start is called before the first frame update
@@ -62,6 +65,9 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.Log("Ungrounded");
             isGrounded = false;
+
+            // Spawns Particles when player lands
+            Instantiate(_landedVFX, _vfxSpawn.position, Quaternion.identity);
         }
     }
 }
