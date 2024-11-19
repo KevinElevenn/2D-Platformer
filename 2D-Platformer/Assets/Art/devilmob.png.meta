@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      devilmob_0: 4777970440256680561
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
